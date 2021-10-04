@@ -1,4 +1,5 @@
 import React from 'react';
+import './Footer.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -17,9 +18,11 @@ const Footer = () => {
                 <Row>
                     <Col lg={8} md={6} xs={12} className="text-light">
                         <h5>follow us on social media.</h5>
-                        <i class="fab fa-facebook-square fs-3 me-3"></i>
-                        <i class="fab fa-instagram-square fs-3 me-3"></i>
-                        <i class="fab fa-youtube fs-3"></i>
+                        <div className="icons">
+                            <i class="fab fa-facebook-square fs-3 me-3"></i>
+                            <i class="fab fa-instagram-square fs-3 me-3"></i>
+                            <i class="fab fa-youtube fs-3"></i>
+                        </div>
                         <hr style={{ width: "50%" }} />
                         <p>&copy; Copyright reserved in Programming Hero</p>
                     </Col>

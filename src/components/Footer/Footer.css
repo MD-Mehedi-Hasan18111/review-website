@@ -1,0 +1,9 @@
+.icons i{
+    margin: 0 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.icons i:hover{
+    color: #BD3F4A;
+}

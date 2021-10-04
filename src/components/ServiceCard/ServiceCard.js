@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
+import './ServiceCard.css';
 
 const ServiceCard = (props) => {
 
@@ -8,8 +9,8 @@ const ServiceCard = (props) => {
     return (
         <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
             <Col>
-                <div className="card h- 100 shadow-lg border-2">
-                    <img src={banner} className="card-img-top" alt="..." />
+                <div className="serviceCard h- 100 shadow-lg border-2">
+                    <img height="180px" src={banner} className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title">{name}</h5>
                         <h4>${price}</h4>

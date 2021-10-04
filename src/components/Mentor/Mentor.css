@@ -1,0 +1,12 @@
+.mentor-container{
+    padding: 50px;
+}
+
+.myCard{
+    transition: .5s;
+}
+
+.myCard:hover{
+    box-shadow: 0 10px 20px gray;
+    transform: scale(1.1);
+}
