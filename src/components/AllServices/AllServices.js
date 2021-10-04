@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { cartContext } from '../../App';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
+import NavBar from '../NavBar/NavBar';
 import ServiceCard from '../ServiceCard/ServiceCard';
 
 const AllServices = () => {
@@ -35,7 +36,7 @@ const AllServices = () => {
 
     return (
         <div>
-            <Header></Header>
+            <NavBar />
             <div className="container p-4">
                 <h2 className="text-center my-3">All Services</h2>
                 <div className="row">

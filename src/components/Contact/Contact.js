@@ -1,12 +1,12 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
+import NavBar from '../NavBar/NavBar';
 import './Contact.css';
 
 const Contact = () => {
     return (
         <div>
-            <Header />
+            <NavBar />
             <div className="container p-4 text-center">
                 <h1 className="my-4">Contact Us</h1>
                 <input type="text" placeholder="Username..." /><br /><br />

@@ -3,11 +3,12 @@ import { Col, Container, Row } from 'react-bootstrap';
 import aboutSideImg from '../../images/about-img2.png';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
+import NavBar from '../NavBar/NavBar';
 
 const About = () => {
     return (
         <div>
-            <Header></Header>
+            <NavBar />
             <Container className="p-5">
                 <Row className="d-flex align-items-center">
                     <Col lg={6} md={6} xs={12}>
