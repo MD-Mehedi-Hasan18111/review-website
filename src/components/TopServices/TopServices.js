@@ -15,8 +15,18 @@ const TopServices = () => {
             .then(data => setServices(data))
     }, [])
 
+    let newCart = [];
     const handleOrder = (service) => {
-        const newCart = [...cart, service];
+        const existService = cart.find(sr => sr.id === service.id);
+        if (existService) {
+            const remainingService = cart.filter(sr => sr.id !== service.id);
+            existService.quantity += 1;
+            newCart = [...remainingService, existService];
+        }
+        else {
+            service.quantity = 1;
+            newCart = [...cart, service];
+        }
         setCart(newCart);
     }
 

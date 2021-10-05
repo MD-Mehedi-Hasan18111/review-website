@@ -32,7 +32,7 @@ const AllServices = () => {
         setCart(newCart);
     }
 
-    console.log(services);
+    // console.log(services);
 
     return (
         <div>

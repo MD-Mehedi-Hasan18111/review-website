@@ -11,7 +11,7 @@ const ReviewOrder = () => {
     const [cart, setCart] = useContext(cartContext);
     let total = 0;
     for (const item of cart) {
-        total += item.price;
+        total += item.price * item.quantity;
     }
 
     const history = useHistory();
@@ -36,7 +36,7 @@ const ReviewOrder = () => {
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-12">
                         <h2>Total Service: {cart.length}</h2>
-                        <h3>Total Cost: {total}</h3>
+                        <h3>Total Cost: ${total}</h3>
                     </div>
                 </div>
                 <Link to="/services">
